@@ -11,6 +11,8 @@ class ContainerViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UITabBar.appearance().unselectedItemTintColor = UIColor.black
+        UITabBar.appearance().tintColor = UIColor.yellow
 
         // Do any additional setup after loading the view.
     }
