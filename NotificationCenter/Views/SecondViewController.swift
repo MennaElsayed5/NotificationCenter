@@ -22,6 +22,10 @@ class SecondViewController: UIViewController {
         }
    //   view.backgroundColor = UIColor.systemMint
     }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     /*
     // MARK: - Navigation
 

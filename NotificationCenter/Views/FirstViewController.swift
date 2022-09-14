@@ -21,6 +21,10 @@ class FirstViewController: UIViewController {
         }
        // view.backgroundColor = UIColor.purple
     }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     /*
     // MARK: - Navigation
 

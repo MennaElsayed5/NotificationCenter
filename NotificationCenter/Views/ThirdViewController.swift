@@ -22,6 +22,9 @@ class ThirdViewController: UIViewController {
         }
     //  view.backgroundColor = UIColor.magenta
     }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 
     /*
     // MARK: - Navigation
