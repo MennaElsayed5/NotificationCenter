@@ -15,8 +15,11 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-  @objc func changBg(){
-      view.backgroundColor = UIColor.purple
+    @objc func changBg(_ notificatio : Notification){
+        if let color = notificatio.object as? UIColor{
+            view.backgroundColor = color
+        }
+       // view.backgroundColor = UIColor.purple
     }
     /*
     // MARK: - Navigation

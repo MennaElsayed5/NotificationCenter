@@ -16,7 +16,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func postNotificationBtn(_ sender: Any) {
-        NotificationCenter.default.post(name: Notification.Name(notificatioName), object: nil)
+        let mainColor = UIColor.darkGray
+        NotificationCenter.default.post(name: Notification.Name(notificatioName), object: mainColor)
     }
     
     /*

@@ -16,8 +16,11 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-  @objc func changBg(){
-      view.backgroundColor = UIColor.systemMint
+    @objc func changBg(_ notificatio : Notification){
+        if let color = notificatio.object as? UIColor{
+            view.backgroundColor = color
+        }
+   //   view.backgroundColor = UIColor.systemMint
     }
     /*
     // MARK: - Navigation
