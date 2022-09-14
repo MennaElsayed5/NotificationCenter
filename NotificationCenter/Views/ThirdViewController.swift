@@ -17,7 +17,7 @@ class ThirdViewController: UIViewController {
     }
     
   @objc func changBg(){
-      view.backgroundColor = UIColor.green
+      view.backgroundColor = UIColor.magenta
     }
 
     /*

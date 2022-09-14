@@ -17,7 +17,7 @@ class SecondViewController: UIViewController {
     }
     
   @objc func changBg(){
-      view.backgroundColor = UIColor.orange
+      view.backgroundColor = UIColor.systemMint
     }
     /*
     // MARK: - Navigation

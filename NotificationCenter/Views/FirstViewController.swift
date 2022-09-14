@@ -16,7 +16,7 @@ class FirstViewController: UIViewController {
     }
     
   @objc func changBg(){
-      view.backgroundColor = UIColor.blue
+      view.backgroundColor = UIColor.purple
     }
     /*
     // MARK: - Navigation
