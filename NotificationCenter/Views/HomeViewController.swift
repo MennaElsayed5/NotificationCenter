@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+let notificatioName = "com.iti"
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,7 +15,10 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func postNotificationBtn(_ sender: Any) {
+        NotificationCenter.default.post(name: Notification.Name(notificatioName), object: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

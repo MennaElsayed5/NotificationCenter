@@ -11,11 +11,13 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NotificationCenter.default.addObserver(self, selector: #selector(changBg), name: Notification.Name(notificatioName), object: nil)
         // Do any additional setup after loading the view.
     }
     
-
+  @objc func changBg(){
+      view.backgroundColor = UIColor.blue
+    }
     /*
     // MARK: - Navigation
 
